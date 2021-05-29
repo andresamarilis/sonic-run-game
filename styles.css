@@ -5,16 +5,23 @@
 }
 .game{
     width: 900px;
-    height: 250px;
+    height: 370px;
     border: 5px solid black;
     margin: auto;
+
+    background: url(map.png);
+    background-repeat: no-repeat;
 }
+
+
+ /* SONIC */
 #character{
     width: 90px;
     height: 100px;
     position:relative;
-    top: 140px;
+    top: 200px;
 }
+
 .animate{
     animation: jump 0.3s linear;
 }
@@ -24,12 +31,35 @@
     100%{top: 140px;}
 }
 
-#block{
+
+
+/* TAILS */
+
+/* #characterTwo{
+    width: 90px;
+    height: 100px;
+    position:relative;
+    top: 20px;
+    animation: fly 5s infinite;
+    border: solid; 
+}
+
+
+@keyframes fly{
    
+    from {top: 0px;}
+    to {top: 20px;}
+
+} */
+
+
+/* BUG */
+#block{
+
     width: 60px;
     height: 60px;
     position: relative;
-    top: 140px;
+    top: 190px;
     /* left: 20px; */
     /* border: solid;  */
     animation: block 1s infinite linear;
