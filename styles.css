@@ -25,20 +25,18 @@
 }
 
 
-
 /* TAILS */
 
 #characterTwo{
     width: 90px;
     height: 100px;
+    position:relative;
+    animation: fly 2s infinite;
 }
 
 
 @keyframes fly{
-   
-    from {top: 0px;}
-    to {top: 20px;}
-
+    50% {top: 10px;}
 }
 
 
