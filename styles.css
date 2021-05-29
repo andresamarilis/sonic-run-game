@@ -31,12 +31,24 @@
     width: 90px;
     height: 100px;
     position:relative;
-    animation: fly 2s infinite;
+    animation: fly 8s infinite linear;
+    
 }
 
 
 @keyframes fly{
-    50% {top: 10px;}
+    
+    20% {top: 0px;}
+    40% {top: 90px;}
+    50% {top: 60px;}
+    70% {top: 50px;}
+    100% {top: 0px;}
+   
+   
+    
+    
+
+    
 }
 
 
@@ -48,16 +60,20 @@
     position:relative;
     left: 50px; 
     top: 200px;
+    
 }
 
 .animate{
     animation: jump 0.3s infinite linear;
+    
 }
 @keyframes jump{
     0%{top: 140px;}
     70%{top: 20px;}
     100%{top: 140px;}
+
 }
+
 
 
 
