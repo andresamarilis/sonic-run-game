@@ -9,39 +9,28 @@
     border: 5px solid black;
     margin: auto;
 
+    /* background: url(map.png);
+    background-repeat: no-repeat; */
+}
+
+#background{
     background: url(map.png);
-    background-repeat: no-repeat;
+    
+    animation: move 0.3s linear;
 }
 
-
- /* SONIC */
-#character{
-    width: 90px;
-    height: 100px;
-    position:relative;
-    top: 200px;
-}
-
-.animate{
-    animation: jump 0.3s linear;
-}
-@keyframes jump{
-    0%{top: 140px;}
-    70%{top: 20px;}
-    100%{top: 140px;}
+@keyframes move{
+    0%{left: 900px}
+    100%{left: -200px}
 }
 
 
 
 /* TAILS */
 
-/* #characterTwo{
+#characterTwo{
     width: 90px;
     height: 100px;
-    position:relative;
-    top: 20px;
-    animation: fly 5s infinite;
-    border: solid; 
 }
 
 
@@ -50,7 +39,29 @@
     from {top: 0px;}
     to {top: 20px;}
 
-} */
+}
+
+
+
+ /* SONIC */
+#character{
+    width: 90px;
+    height: 100px;
+    position:relative;
+    left: 50px; 
+    top: 200px;
+}
+
+.animate{
+    animation: jump 0.3s infinite linear;
+}
+@keyframes jump{
+    0%{top: 140px;}
+    70%{top: 20px;}
+    100%{top: 140px;}
+}
+
+
 
 
 /* BUG */
@@ -66,7 +77,7 @@
 }
 @keyframes block{
     0%{left: 900px}
-    100%{left: -200px}
+    100%{left: -250px}
 }
 p{
     text-align: center;
