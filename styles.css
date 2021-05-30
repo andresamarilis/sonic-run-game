@@ -4,8 +4,9 @@
     overflow-x: hidden;
 }
 .game{
-    width: 900px;
-    height: 370px;
+    width: 880px;
+    height: 300px;
+    position: relative;
     border: 5px solid black;
     margin: auto;
 
@@ -13,16 +14,28 @@
     background-repeat: no-repeat; */
 }
 
+
 #background{
-    background: url(map.png);
+    /* background-image: url("map.png"); */
+    /* width: 800px;
+    height: 360px; */
+    border: solid; 
+    color: green; 
     
-    animation: move 0.3s linear;
+    width: 1500px;
+    height: 300px;
+   
+    position: absolute;
+    animation: sway 0.5s infinite linear;
 }
 
-@keyframes move{
-    0%{left: 900px}
-    100%{left: -200px}
+@keyframes sway{
+    0%{left: 0px}
+    100%{left: -380px}
 }
+
+
+
 
 
 /* TAILS */
@@ -30,7 +43,7 @@
 #characterTwo{
     width: 90px;
     height: 100px;
-    position:relative;
+    position:absolute;
     animation: fly 8s infinite linear;
     
 }
@@ -47,12 +60,7 @@
     20% {left: 30px;}
     40% {left: 50px;}
     100% {left: 0px;}
-   
-   
-    
-    
-
-    
+  
 }
 
 
@@ -62,15 +70,19 @@
     width: 90px;
     height: 100px;
     position:relative;
-    left: 50px; 
-    top: 200px;
+    left: 150px; 
+    top: 150px;
+    
     
 }
 
 .animate{
+
+    /* animation: run 1s infinite linear ; */
     animation: jump 0.3s infinite linear;
     
 }
+
 @keyframes jump{
     0%{top: 140px;}
     70%{top: 20px;}
@@ -82,15 +94,17 @@
 
 
 
+
+
 /* BUG */
 #block{
 
     width: 60px;
     height: 60px;
     position: relative;
-    top: 190px;
+    top: 140px;
     /* left: 20px; */
-    /* border: solid;  */
+   
     animation: block 1s infinite linear;
 }
 @keyframes block{
