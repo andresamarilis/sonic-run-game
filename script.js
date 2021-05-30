@@ -11,7 +11,7 @@ function jump(){
 var checkDead = setInterval(function() {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if(blockLeft<120 && blockLeft>-5 && characterTop>=150){
+    if(blockLeft<120 && blockLeft>-3 && characterTop>=150){
         block.style.animation = "none";
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
