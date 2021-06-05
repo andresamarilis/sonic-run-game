@@ -1,5 +1,5 @@
 # sonic-run-game
-simple Sonic the hedgehog game. Avoid the motobug by jumping (mouse click) over the motobug.  
+simple Sonic the hedgehog game. Avoid the motobug by jumping over it (mouse click).  
 
 created by myself with the help of https://www.youtube.com/watch?v=bG2BmmYr9NQ.
 created using html, css, javascript. 
